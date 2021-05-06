@@ -54,9 +54,9 @@
     var l = (0, _utils.properObject)(lhs);
     var r = (0, _utils.properObject)(rhs);
 
-    var deletedValues = Object.keys(l).reduce(function (acc, key) {
-      return r.hasOwnProperty(key) ? acc : _extends({}, acc, _defineProperty({}, key, undefined));
-    }, {});
+    //const deletedValues = Object.keys(l).reduce((acc, key) => {
+    //  return r.hasOwnProperty(key) ? acc : { ...acc, [key]: undefined };
+    //}, {});
 
     if ((0, _utils.isDate)(l) || (0, _utils.isDate)(r)) {
       if (l.valueOf() == r.valueOf()) return {};
