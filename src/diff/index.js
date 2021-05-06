@@ -25,7 +25,7 @@ const diff = (lhs, rhs) => {
     if (isObject(difference) && isEmpty(difference) && !isDate(difference)) return acc; // return no diff
 
     return { ...acc, [key]: difference }; // return updated key
-  }, deletedValues);
+  }, {});
 };
 
 export default diff;
