@@ -71,7 +71,7 @@
       if ((0, _utils.isObject)(difference) && (0, _utils.isEmpty)(difference) && !(0, _utils.isDate)(difference)) return acc; // return no diff
 
       return _extends({}, acc, _defineProperty({}, key, difference)); // return updated key
-    }, deletedValues);
+    }, Object.keys(l));
   };
 
   exports.default = diff;
